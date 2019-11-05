@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<meta charset="UTF8" />
+		<title>Discord avatar cropper with preview</title>
+		<link href="./styles.css" rel="stylesheet" />
+		<link href="./resize_styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="servers">
+			<img class="avatar" src="#" />
+		</div>
+		<div id="sidebar_left">
+			<div class="top_panel">
+
+			</div>
+			<div class="placeholder">
+				<div class="placeholder"></div>
+				<div id="user_info">
+					<div class="wrapper">
+						<img class="avatar" src="#" />
+						<span class="login">Lorem<span class="id">#42069</span></span>
+					</div>
+					<div class="empty"></div>
+				</div>
+			</div>
+			<div class="bar">
+				<img class="avatar" src="#" />
+			</div>
+		</div>
+		<div id="main">
+			<div class="top_panel">
+			
+			</div>
+			<div id="container">
+				<div id="chat">
+					<div class="message_wrapper">
+						<img class="avatar" src="#" />
+						<div class="message">
+							<div class="message_info">
+								<span class="login">Lorem</span>
+							</div>
+							<div class="text">
+								Here you can crop, preview and download your avatar for Discord!
+								<div id="content">
+									<div id="file_select_wrapper">
+										<h2>1. Choose file</h2>
+										<form>
+											<input type="file" id="file_select" />
+										</form>
+									</div>
+									<div id="resize_wrapper">
+										<div id="edit">
+											<h2>2. Edit:</h2>
+											<div id="original_container">
+												<img id="source" src="#" />
+												<div id="resized_container">
+													<img id="resized" src="#" />
+													<div id="resized_background"></div>
+													<div id="cropper">
+														<img id="cropper_background" src="#">
+														<div id="sizer-1" class="sizer"></div>
+														<div id="sizer-2" class="sizer"></div>
+														<div id="sizer-3" class="sizer"></div>
+														<div id="sizer-4" class="sizer"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="result">
+											<h2>3. Download:</h2>
+											<canvas id="canvas"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="fake_input_wrapper">
+						<div class="fake_input"></div>
+					</div>
+				</div>
+			</div>
+			<div id="sidebar_right">
+				<div class="member_wrapper">
+					<div class="group_title">DOLOR SIT AMET-1</div>
+					<div class="member">
+						<img class="avatar" src="#" />
+						<span>Lorem</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./index.js"></script>
+</html>

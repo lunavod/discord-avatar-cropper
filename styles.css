@@ -1,0 +1,264 @@
+body {
+	background: #36393f;
+	display: flex;
+	margin: 0;
+	font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body > * {
+	max-height: 100vh;
+	overflow: hidden;
+}
+
+#servers {
+	width: 72px;
+	background: #202225;
+	display: flex;
+	flex-direction: column;
+}
+
+#servers .avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 11px;
+}
+
+#sidebar_left, #sidebar_right {
+	width: 240px;
+	background: #2f3136;
+	display: flex;
+	flex-direction: column;
+}
+
+#sidebar_left .top_panel {}
+
+.top_panel {
+	height: 48px;
+	min-height: 48px;
+	width: 100%;
+	box-shadow: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+}
+
+#sidebar_left #user_info {
+	margin-top: 100%;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 0 0 1px rgba(32,34,37,.6);
+	background: #202225;
+	text-align: center;
+	margin-bottom: 16px;
+	/* overflow: hidden; */
+	/* padding-bottom: 43px; */
+	height: 168px;
+}
+
+#sidebar_left #user_info .wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 10px;
+}
+
+#sidebar_left #user_info .avatar {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 10px;
+}
+
+#sidebar_left #user_info .login {
+	font-weight: 600;
+	color: white;
+}
+
+#sidebar_left #user_info .id {
+	color: hsla(0,0%,100%,.6);
+	font-weight: 500;
+}
+
+#sidebar_left #user_info .empty {
+	width: 100%;
+	height: 20px;
+	background: #2f3136;
+}
+
+#sidebar_left .bar {
+	background: #292b2f;
+	height: 52px;
+	min-height: 52px;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	padding-bottom: 1px;
+}
+
+#sidebar_left .bar .avatar {
+	width: 32px;
+	height: 32px;
+}
+
+#main {
+	width: calc(100% - 72px - 240px);
+	display: flex;
+	padding-top: 48px;
+	position: relative;
+	/* flex-direction: column; */
+}
+
+#main .top_panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#container {
+	width: calc(100% - 240px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.content {
+}
+
+.bottom {
+	margin: 0 20px;
+	min-height: 95px;
+}
+
+#chat {
+	display: flex;
+	height: calc(100% - 92px);
+	max-height: calc(100% - 92px);
+	overflow-y: scroll;
+}
+
+.message_wrapper {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	padding: 20px 0px;
+	margin: 0 20px;
+	border-top: 1px solid hsla(0, 0%, 100%, 0.06);
+}
+
+.message_wrapper .avatar {
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+}
+
+.message {
+	width: 100%;
+}
+
+.login {
+	color: rgb(68, 176, 158);
+}
+
+.text {
+	color: #dcddde;
+	margin-top: 4px;
+	width: 100%;
+}
+
+.fake_input_wrapper {
+	padding-top: 20px;
+	margin-bottom: 30px;
+	border-top: 1px solid hsla(0, 0%, 100%, 0.06);
+}
+
+.bottom .fake_input {
+	width: 100%;
+	height: 40px;
+	background: #40444b;
+	border-radius: 8px;
+}
+
+.group_title {
+	color: #8e9297;
+	font-size: 12px;
+	padding: 24px 8px 0 16px;
+	font-weight: 600;
+}
+
+.member {
+	max-width: 224px;
+	height: 44px;
+	margin-left: 8px;
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
+	color: rgb(68, 176, 158);
+}
+
+.member .avatar {
+	width: 32px;
+	height: 32px;
+	margin-right: 12px;
+}
+
+.placeholder {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.avatar {
+	border-radius: 50%;
+}
+
+
+
+#resize_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#resize_wrapper > div {
+	margin-right: 60px;
+	margin-bottom: 16px;
+}
+
+h2 {
+	/* color: white; */
+	font-weight: 300;
+	margin: 8px 0;
+	margin-bottom: 16px;
+}
+
+#file_select_wrapper {
+	margin: 16px 0;
+}
+
+#file_select_wrapper input {
+	/* padding: 8px;
+	background: white;
+	border: 1px solid gray;
+	border-radius: 8px; */
+}
+
+::-webkit-scrollbar {
+    height: 14px;
+    width: 14px;
+	background: #2f3136;
+	border-radius: 1ex;
+	border: 3px solid #36393f;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 8px;
+	background: #202225;
+	border: 3px solid #36393f;
+    border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
